@@ -6,8 +6,43 @@
     <title>Document</title>
 
     <script>
+      
+          let arr=[1,2,3,4,5];
 
+        //   arr.forEach((elm,idx,array)=>{
+        //       console.log(`i번째 요소는 ${elm}입니다`);
+        //       console.log(array);
+        //   });
 
+        let newArray= arr.map((elm)=>{
+            return elm*10;
+        });
+
+        console.log(newArray);
+
+        // for(let i=0; i<arr.length; i++){
+        //     newArra.push()
+        // }
+
+        let colors=["green","blue","purple"];
+        console.log(colors[2]);
+        console.log(colors.at());
+
+        console.log(colors.includes("blue",2));
+
+        console.log(colors.includes("yellow",1));
+
+        let colors2=[
+            {id:1, color:"green"},
+            {id:2, color:"blue"},
+            {id:3, color:"purple"}
+        ];
+
+        let idx= colors2.find((elm)=>elm.color=="purple");
+
+        console.log(idx);
+
+        
     </script>
 </head>
 <body>
