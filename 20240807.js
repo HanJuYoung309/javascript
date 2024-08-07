@@ -1,0 +1,52 @@
+
+
+let a=Array.isArray([1,100,50]);
+let b=Array.isArray({id:1, color:"green"});
+let c=Array.isArray("string");
+let d=Array.isArray(undefined);
+
+console.log(a,b,c,d);
+
+//spread
+const toy={
+   type:"bear",
+   price:15000 
+};
+
+const blueToy={
+    ...toy,
+    color:"blue"
+}
+
+const yellowToy={
+    ...toy,
+    color:"yellow"
+}
+
+console.log(blueToy);
+console.log(yellowToy);
+
+const color1=["red", "orange","yellow"];
+
+const color2=["blue", "navy","purple"];
+
+const rainbow=[...color1,"green",...color2];
+
+console.log(rainbow);
+
+//rest
+//나머지 매개변수
+const color=["red","orange","yellow","green"];
+const[c1,c2 ,...rest]=color;
+
+console.log(c1,c2);
+console.log(rest);
+
+const print =(a,b ,...rest)=>{
+    console.log(a,b,rest);
+}
+
+print(1,2,3,4,5,6);
+
+
+

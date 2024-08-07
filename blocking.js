@@ -19,3 +19,30 @@ work (()=>{
 
 
 console.log("종료");
+
+// let colors=["green","blue","purple"];
+// let[c1,c2,c3]=colors;
+
+// // let c1=colors[0];
+// // let c2=colors[1];
+// // let c3=colors[2];
+
+// console.log(c1);
+// console.log(c2);
+// console.log(c3);
+
+let c1,c2,c3;
+[c1,c2,c3]=["green","blue","purple"];
+
+let a=10;
+let b=5;
+// let tmp;
+
+// tmp=a;
+// a=b;
+// b=tmp;
+
+console.log(a,b);
+
+
+
