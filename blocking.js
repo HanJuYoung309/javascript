@@ -5,20 +5,20 @@
 //비동기 처리란
 //여러 작업들을 동시에 작업하는 처리방식
 
-const work=(callback)=>{
-    setTimeout(()=>{
-        console.log("3초만 기다리세요");
-        callback();
-    }, 3000);
+// const work=(callback)=>{
+//     setTimeout(()=>{
+//         console.log("3초만 기다리세요");
+//         callback();
+//     }, 3000);
     
-};
+// };
 
-work (()=>{
-     console.log("종료");
-});
+// work (()=>{
+//      console.log("종료");
+// });
 
 
-console.log("종료");
+// console.log("종료");
 
 // let colors=["green","blue","purple"];
 // let[c1,c2,c3]=colors;
@@ -31,8 +31,8 @@ console.log("종료");
 // console.log(c2);
 // console.log(c3);
 
-let c1,c2,c3;
-[c1,c2,c3]=["green","blue","purple"];
+// let c1,c2,c3;
+// [c1,c2,c3]=["green","blue","purple"];
 
 let a=10;
 let b=5;
@@ -44,5 +44,19 @@ let b=5;
 
 console.log(a,b);
 
+
+let colors={
+    c1:"green",
+    c2:"blue",
+    c3:"purple"
+}
+
+let c1=colors.c1;
+let c2=colors.c2;
+let c3=colors.c3;
+
+console.log(c1);
+console.log(c2);
+console.log(c3);
 
 
