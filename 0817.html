@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let id= Symbol() //id를 심벌로 지정합니다.
+
+    const member ={
+        name:"kim",
+        [id]: 12345 //심벌을 키로 지정할때 대괄호를 사용합니다.
+    }
+    member
+    member[id];
+
+    let userInput= prompt("아무 숫자나 입력하세요");
+    typeof(userInput);
+</script>
+<body>
+    
+</body>
+</html>
